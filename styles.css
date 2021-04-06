@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.top-section{
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991);
+    background: linear-gradient(to right, #78ffd6, #007991);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Navigation Section  */
+.navbar{
+    font-size: x-large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #3fc1c9 !important;
+    transition: background-color 200ms linear;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background: #222831;
+    transition: 0.4s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+
+}
+
+
+.nav-link {
+    padding: 7px;
+    margin: 0 10px;
+    transition: 0.8s;
+}
+
+
+.brand{
+    width: 5%;
+    margin: 3px 0 3px 20px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+/*  */
+
+.card1{
+    border: 0;
+    background: transparent;
+    margin-top: 20vh;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card1-img{
+    height: 200px;
+    width: 200px;
+    margin-left: 30%;
+}
+
+.card1-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+#hello{
+    display: flex;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /*Keeps the content on a single line */
+    margin: 0 auto;/* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.4px; /* Adjust as needed */
+    animation: 
+    typing 2.4s steps(30, end),
+    blink-caret .5s step-end infinite;
+    display: inline-flex;
+}
+
+#hel{
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3a3b3c; }
+  }
+
+
+.brief-bio{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* About ME Section  */
+
+.about-me{
+    padding: 7% 0 0 0;
+}
+
+.container-about{
+    width: 60%;
+}
+
+.text-center{
+    font-weight: bold;
+}
+
+.icon {
+    color: #00adb5;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #007991;
+}
+
+.feature-box {
+    padding: 2%;
+    text-align: center;
+}
+
+
+
+/* Skills Section  */
+
+.skills-section{
+    margin-top: 10%;
+}
+
+.progress{
+    margin: 10px;
+    height: 30px;
+}
+
+.progress-bar{
+    background-color: #08d9d6;
+}
+
+
+
+/* Awards Section  */
+
+.awards-section{
+    background-color: #3fc1c9;   
+    padding: 30px 10px;
+    margin-top: 10%;
+}
+
+.card2{
+    border: 0;
+    background: transparent;
+    margin-top: 7vh;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card2-img{
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.card2-img:hover{
+    transform: scale(1.1);
+}
+
+
+.award-text{
+    cursor: pointer;
+}
+
+.award-text:hover{
+    text-decoration: underline;
+}
+
+
+/* Gallery + Awards Section  */
+
+.gallery-section{
+	background:#0b1d2a;
+    margin-top: 15%;
+}
+
+.gallery-img{
+	width: 100%;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.5s;
+	padding: 10px;
+}
+
+.gallery-img:hover{
+    transform:scale(1.3);
+}
+
+
+
+
+.footer-section{
+	height: 30vh;
+    text-align: center;
+}
+
+
+.footer-section .container-fluid{
+	margin-top: 4%;
+    padding-top: 10px;
+}
+
+.social-icon {
+	padding: 20px 10px;
+	color: #0b1d2a;
+}
+.social-icon:hover{
+	color: #007991;
+}
+
+.btn-primary{
+    margin-top: 8px;
+}
+
+/* Scroll to top page button  */
+
+.scrollToTop{
+    width:100px; 
+    height:130px;
+    padding:10px; 
+    text-align:center; 
+    font-weight: bold;
+    color: #08d9d6;
+    text-decoration: none;
+    position:fixed;
+    top:85%;
+    right:5px;
+    display:none;
+}
+.scrollToTop:hover{
+	color: #00adb5;
+    text-decoration:none;
+}
+
+
+
+/* Dark mode Activated  */
+
+.darkmode--activated .awards-section{
+    background-color: #fff;
+}
+
+.darkmode--activated p, .darkmode--activated h2, .darkmode--activated h3, .darkmode--activated h1, .darkmode--activated h5{
+    color: #fff;
+}
+
+.darkmode--activated .top-section{
+    background: #fff;
+}
+
+.darkmode--activated .gallery-section{
+    background-color: #fff;
+}
+
+.darkmode--activated .awards, .darkmode--activated .skills{
+    color: #000;
+}
+
+.darkmode--activated .copyright{
+    color: #000;
+}
+
+.darkmode--activated .modal-title{
+    color: #000;
+}
