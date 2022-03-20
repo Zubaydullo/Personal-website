@@ -1,1 +1,1 @@
-Demo: https://zubaydullo.github.io/personal-website/
+Live Demo: https://zubaydullo.github.io/personal-website/
